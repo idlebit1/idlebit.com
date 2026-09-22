@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Idlebit</title>
+  <meta name="description" content="Idlebit is a small independent software studio. Our latest project is Yarnwords.">
+  <link rel="canonical" href="https://idlebit.com/">
+  <meta property="og:title" content="Idlebit">
+  <meta property="og:description" content="Idlebit is a small independent software studio. Our latest project is Yarnwords.">
+  <meta property="og:url" content="https://idlebit.com/">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231f2933'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='system-ui,sans-serif' font-size='18' font-weight='700' fill='%23fff'%3Ei%3C/text%3E%3C/svg%3E">
+  <style>
+    :root {
+      --bg: #fafaf9;
+      --fg: #1f2933;
+      --muted: #616e7c;
+      --accent: #2563eb;
+      --rule: #e4e7eb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111418;
+        --fg: #e6e9ee;
+        --muted: #9aa5b1;
+        --accent: #7cacf8;
+        --rule: #2a3038;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    main {
+      flex: 1;
+      max-width: 40rem;
+      width: 100%;
+      margin: 0 auto;
+      padding: 4rem 1.25rem 2rem;
+    }
+    h1 {
+      font-size: 2.25rem;
+      letter-spacing: -0.02em;
+      margin: 0 0 1rem;
+    }
+    p { margin: 0 0 1.25rem; font-size: 1.125rem; }
+    a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+    a:hover { text-decoration-thickness: 2px; }
+    h2 {
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin: 2.5rem 0 0.5rem;
+    }
+    footer {
+      max-width: 40rem;
+      width: 100%;
+      margin: 0 auto;
+      padding: 1.5rem 1.25rem;
+      border-top: 1px solid var(--rule);
+      color: var(--muted);
+      font-size: 0.875rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Idlebit</h1>
+    <p>Idlebit is a small independent software studio. Our latest project is <a href="https://yarnwords.com/about">Yarnwords</a>.</p>
+
+    <h2>Contact</h2>
+    <p><a href="mailto:support@idlebit.com">support@idlebit.com</a></p>
+  </main>
+  <footer>
+    &copy; <span id="year">2026</span> Idlebit
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
